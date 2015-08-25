@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE47ED9C1B8D151B00D0081D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47ED9B1B8D151B00D0081D /* AppDelegate.swift */; };
+		CE47ED9E1B8D151B00D0081D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47ED9D1B8D151B00D0081D /* ViewController.swift */; };
+		CE47EDA11B8D151B00D0081D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE47ED9F1B8D151B00D0081D /* Main.storyboard */; };
+		CE47EDA31B8D151B00D0081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDA21B8D151B00D0081D /* Assets.xcassets */; };
+		CE47EDA61B8D151B00D0081D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDA41B8D151B00D0081D /* LaunchScreen.storyboard */; };
+		CE47EDB11B8D151B00D0081D /* millyMadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47EDB01B8D151B00D0081D /* millyMadTests.swift */; };
+		CE47EDBC1B8D151B00D0081D /* millyMadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47EDBB1B8D151B00D0081D /* millyMadUITests.swift */; };
+		CE47EDC11B8D151B00D0081D /* millyMad WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CE47EDC01B8D151B00D0081D /* millyMad WatchKit App.app */; };
+		CE47EDC71B8D151B00D0081D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDC51B8D151B00D0081D /* Interface.storyboard */; };
+		CE47EDC91B8D151B00D0081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDC81B8D151B00D0081D /* Assets.xcassets */; };
+		CE47EDD01B8D151B00D0081D /* millyMad WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE47EDCF1B8D151B00D0081D /* millyMad WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE47EDD71B8D151B00D0081D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47EDD61B8D151B00D0081D /* InterfaceController.swift */; };
+		CE47EDD91B8D151B00D0081D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47EDD81B8D151B00D0081D /* ExtensionDelegate.swift */; };
+		CE47EDDB1B8D151B00D0081D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47EDDA1B8D151B00D0081D /* NotificationController.swift */; };
+		CE47EDDD1B8D151B00D0081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDDC1B8D151B00D0081D /* Assets.xcassets */; };
+		CE47EDF41B8D152F00D0081D /* millyMad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDF21B8D152F00D0081D /* millyMad.jpg */; };
+		CE47EDF51B8D152F00D0081D /* milly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE47EDF31B8D152F00D0081D /* milly.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE47EDAD1B8D151B00D0081D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47ED901B8D151B00D0081D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47ED971B8D151B00D0081D;
+			remoteInfo = millyMad;
+		};
+		CE47EDB81B8D151B00D0081D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47ED901B8D151B00D0081D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47ED971B8D151B00D0081D;
+			remoteInfo = millyMad;
+		};
+		CE47EDC21B8D151B00D0081D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47ED901B8D151B00D0081D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47EDBF1B8D151B00D0081D;
+			remoteInfo = "millyMad WatchKit App";
+		};
+		CE47EDD11B8D151B00D0081D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE47ED901B8D151B00D0081D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE47EDCE1B8D151B00D0081D;
+			remoteInfo = "millyMad WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE47EDE41B8D151B00D0081D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE47EDD01B8D151B00D0081D /* millyMad WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDE81B8D151B00D0081D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CE47EDC11B8D151B00D0081D /* millyMad WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE47ED981B8D151B00D0081D /* millyMad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = millyMad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47ED9B1B8D151B00D0081D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE47ED9D1B8D151B00D0081D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE47EDA01B8D151B00D0081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE47EDA21B8D151B00D0081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE47EDA51B8D151B00D0081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE47EDA71B8D151B00D0081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47EDAC1B8D151B00D0081D /* millyMadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = millyMadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47EDB01B8D151B00D0081D /* millyMadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = millyMadTests.swift; sourceTree = "<group>"; };
+		CE47EDB21B8D151B00D0081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47EDB71B8D151B00D0081D /* millyMadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = millyMadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47EDBB1B8D151B00D0081D /* millyMadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = millyMadUITests.swift; sourceTree = "<group>"; };
+		CE47EDBD1B8D151B00D0081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47EDC01B8D151B00D0081D /* millyMad WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "millyMad WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47EDC61B8D151B00D0081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CE47EDC81B8D151B00D0081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE47EDCA1B8D151B00D0081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47EDCF1B8D151B00D0081D /* millyMad WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "millyMad WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE47EDD51B8D151B00D0081D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CE47EDD61B8D151B00D0081D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CE47EDD81B8D151B00D0081D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CE47EDDA1B8D151B00D0081D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CE47EDDC1B8D151B00D0081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE47EDDE1B8D151B00D0081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE47EDF21B8D152F00D0081D /* millyMad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = millyMad.jpg; sourceTree = "<group>"; };
+		CE47EDF31B8D152F00D0081D /* milly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milly.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE47ED951B8D151B00D0081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDA91B8D151B00D0081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDB41B8D151B00D0081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDCC1B8D151B00D0081D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE47ED8F1B8D151B00D0081D = {
+			isa = PBXGroup;
+			children = (
+				CE47ED9A1B8D151B00D0081D /* millyMad */,
+				CE47EDAF1B8D151B00D0081D /* millyMadTests */,
+				CE47EDBA1B8D151B00D0081D /* millyMadUITests */,
+				CE47EDC41B8D151B00D0081D /* millyMad WatchKit App */,
+				CE47EDD31B8D151B00D0081D /* millyMad WatchKit Extension */,
+				CE47ED991B8D151B00D0081D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE47ED991B8D151B00D0081D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE47ED981B8D151B00D0081D /* millyMad.app */,
+				CE47EDAC1B8D151B00D0081D /* millyMadTests.xctest */,
+				CE47EDB71B8D151B00D0081D /* millyMadUITests.xctest */,
+				CE47EDC01B8D151B00D0081D /* millyMad WatchKit App.app */,
+				CE47EDCF1B8D151B00D0081D /* millyMad WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE47ED9A1B8D151B00D0081D /* millyMad */ = {
+			isa = PBXGroup;
+			children = (
+				CE47ED9B1B8D151B00D0081D /* AppDelegate.swift */,
+				CE47ED9D1B8D151B00D0081D /* ViewController.swift */,
+				CE47ED9F1B8D151B00D0081D /* Main.storyboard */,
+				CE47EDA21B8D151B00D0081D /* Assets.xcassets */,
+				CE47EDA41B8D151B00D0081D /* LaunchScreen.storyboard */,
+				CE47EDA71B8D151B00D0081D /* Info.plist */,
+			);
+			path = millyMad;
+			sourceTree = "<group>";
+		};
+		CE47EDAF1B8D151B00D0081D /* millyMadTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE47EDB01B8D151B00D0081D /* millyMadTests.swift */,
+				CE47EDB21B8D151B00D0081D /* Info.plist */,
+			);
+			path = millyMadTests;
+			sourceTree = "<group>";
+		};
+		CE47EDBA1B8D151B00D0081D /* millyMadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE47EDBB1B8D151B00D0081D /* millyMadUITests.swift */,
+				CE47EDBD1B8D151B00D0081D /* Info.plist */,
+			);
+			path = millyMadUITests;
+			sourceTree = "<group>";
+		};
+		CE47EDC41B8D151B00D0081D /* millyMad WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CE47EDC51B8D151B00D0081D /* Interface.storyboard */,
+				CE47EDC81B8D151B00D0081D /* Assets.xcassets */,
+				CE47EDF21B8D152F00D0081D /* millyMad.jpg */,
+				CE47EDF31B8D152F00D0081D /* milly.jpg */,
+				CE47EDCA1B8D151B00D0081D /* Info.plist */,
+			);
+			path = "millyMad WatchKit App";
+			sourceTree = "<group>";
+		};
+		CE47EDD31B8D151B00D0081D /* millyMad WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE47EDD61B8D151B00D0081D /* InterfaceController.swift */,
+				CE47EDD81B8D151B00D0081D /* ExtensionDelegate.swift */,
+				CE47EDDA1B8D151B00D0081D /* NotificationController.swift */,
+				CE47EDDC1B8D151B00D0081D /* Assets.xcassets */,
+				CE47EDDE1B8D151B00D0081D /* Info.plist */,
+				CE47EDD41B8D151B00D0081D /* Supporting Files */,
+			);
+			path = "millyMad WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CE47EDD41B8D151B00D0081D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE47EDD51B8D151B00D0081D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE47ED971B8D151B00D0081D /* millyMad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47EDE91B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad" */;
+			buildPhases = (
+				CE47ED941B8D151B00D0081D /* Sources */,
+				CE47ED951B8D151B00D0081D /* Frameworks */,
+				CE47ED961B8D151B00D0081D /* Resources */,
+				CE47EDE81B8D151B00D0081D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47EDC31B8D151B00D0081D /* PBXTargetDependency */,
+			);
+			name = millyMad;
+			productName = millyMad;
+			productReference = CE47ED981B8D151B00D0081D /* millyMad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE47EDAB1B8D151B00D0081D /* millyMadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47EDEC1B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMadTests" */;
+			buildPhases = (
+				CE47EDA81B8D151B00D0081D /* Sources */,
+				CE47EDA91B8D151B00D0081D /* Frameworks */,
+				CE47EDAA1B8D151B00D0081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47EDAE1B8D151B00D0081D /* PBXTargetDependency */,
+			);
+			name = millyMadTests;
+			productName = millyMadTests;
+			productReference = CE47EDAC1B8D151B00D0081D /* millyMadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE47EDB61B8D151B00D0081D /* millyMadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47EDEF1B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMadUITests" */;
+			buildPhases = (
+				CE47EDB31B8D151B00D0081D /* Sources */,
+				CE47EDB41B8D151B00D0081D /* Frameworks */,
+				CE47EDB51B8D151B00D0081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47EDB91B8D151B00D0081D /* PBXTargetDependency */,
+			);
+			name = millyMadUITests;
+			productName = millyMadUITests;
+			productReference = CE47EDB71B8D151B00D0081D /* millyMadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE47EDBF1B8D151B00D0081D /* millyMad WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47EDE51B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad WatchKit App" */;
+			buildPhases = (
+				CE47EDBE1B8D151B00D0081D /* Resources */,
+				CE47EDE41B8D151B00D0081D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE47EDD21B8D151B00D0081D /* PBXTargetDependency */,
+			);
+			name = "millyMad WatchKit App";
+			productName = "millyMad WatchKit App";
+			productReference = CE47EDC01B8D151B00D0081D /* millyMad WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CE47EDCE1B8D151B00D0081D /* millyMad WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE47EDE11B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad WatchKit Extension" */;
+			buildPhases = (
+				CE47EDCB1B8D151B00D0081D /* Sources */,
+				CE47EDCC1B8D151B00D0081D /* Frameworks */,
+				CE47EDCD1B8D151B00D0081D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "millyMad WatchKit Extension";
+			productName = "millyMad WatchKit Extension";
+			productReference = CE47EDCF1B8D151B00D0081D /* millyMad WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE47ED901B8D151B00D0081D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Neutun Labs";
+				TargetAttributes = {
+					CE47ED971B8D151B00D0081D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CE47EDAB1B8D151B00D0081D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CE47ED971B8D151B00D0081D;
+					};
+					CE47EDB61B8D151B00D0081D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CE47ED971B8D151B00D0081D;
+					};
+					CE47EDBF1B8D151B00D0081D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CE47EDCE1B8D151B00D0081D = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = CE47ED931B8D151B00D0081D /* Build configuration list for PBXProject "millyMad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE47ED8F1B8D151B00D0081D;
+			productRefGroup = CE47ED991B8D151B00D0081D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE47ED971B8D151B00D0081D /* millyMad */,
+				CE47EDAB1B8D151B00D0081D /* millyMadTests */,
+				CE47EDB61B8D151B00D0081D /* millyMadUITests */,
+				CE47EDBF1B8D151B00D0081D /* millyMad WatchKit App */,
+				CE47EDCE1B8D151B00D0081D /* millyMad WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE47ED961B8D151B00D0081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDA61B8D151B00D0081D /* LaunchScreen.storyboard in Resources */,
+				CE47EDA31B8D151B00D0081D /* Assets.xcassets in Resources */,
+				CE47EDA11B8D151B00D0081D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDAA1B8D151B00D0081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDB51B8D151B00D0081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDBE1B8D151B00D0081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDC91B8D151B00D0081D /* Assets.xcassets in Resources */,
+				CE47EDC71B8D151B00D0081D /* Interface.storyboard in Resources */,
+				CE47EDF41B8D152F00D0081D /* millyMad.jpg in Resources */,
+				CE47EDF51B8D152F00D0081D /* milly.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDCD1B8D151B00D0081D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDDD1B8D151B00D0081D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE47ED941B8D151B00D0081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47ED9E1B8D151B00D0081D /* ViewController.swift in Sources */,
+				CE47ED9C1B8D151B00D0081D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDA81B8D151B00D0081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDB11B8D151B00D0081D /* millyMadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDB31B8D151B00D0081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDBC1B8D151B00D0081D /* millyMadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47EDCB1B8D151B00D0081D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47EDDB1B8D151B00D0081D /* NotificationController.swift in Sources */,
+				CE47EDD91B8D151B00D0081D /* ExtensionDelegate.swift in Sources */,
+				CE47EDD71B8D151B00D0081D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE47EDAE1B8D151B00D0081D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47ED971B8D151B00D0081D /* millyMad */;
+			targetProxy = CE47EDAD1B8D151B00D0081D /* PBXContainerItemProxy */;
+		};
+		CE47EDB91B8D151B00D0081D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47ED971B8D151B00D0081D /* millyMad */;
+			targetProxy = CE47EDB81B8D151B00D0081D /* PBXContainerItemProxy */;
+		};
+		CE47EDC31B8D151B00D0081D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47EDBF1B8D151B00D0081D /* millyMad WatchKit App */;
+			targetProxy = CE47EDC21B8D151B00D0081D /* PBXContainerItemProxy */;
+		};
+		CE47EDD21B8D151B00D0081D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE47EDCE1B8D151B00D0081D /* millyMad WatchKit Extension */;
+			targetProxy = CE47EDD11B8D151B00D0081D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE47ED9F1B8D151B00D0081D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE47EDA01B8D151B00D0081D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE47EDA41B8D151B00D0081D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE47EDA51B8D151B00D0081D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE47EDC51B8D151B00D0081D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE47EDC61B8D151B00D0081D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE47EDDF1B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE47EDE01B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE47EDE21B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "millyMad WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		CE47EDE31B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "millyMad WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		CE47EDE61B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = millyMad_WatchKit_Extension;
+				INFOPLIST_FILE = "millyMad WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		CE47EDE71B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = millyMad_WatchKit_Extension;
+				INFOPLIST_FILE = "millyMad WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		CE47EDEA1B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = millyMad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE47EDEB1B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = millyMad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE47EDED1B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = millyMadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/millyMad.app/millyMad";
+			};
+			name = Debug;
+		};
+		CE47EDEE1B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = millyMadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/millyMad.app/millyMad";
+			};
+			name = Release;
+		};
+		CE47EDF01B8D151B00D0081D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = millyMadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = millyMad;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CE47EDF11B8D151B00D0081D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = millyMadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neutun.millyMadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = millyMad;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE47ED931B8D151B00D0081D /* Build configuration list for PBXProject "millyMad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDDF1B8D151B00D0081D /* Debug */,
+				CE47EDE01B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE47EDE11B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDE21B8D151B00D0081D /* Debug */,
+				CE47EDE31B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE47EDE51B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDE61B8D151B00D0081D /* Debug */,
+				CE47EDE71B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE47EDE91B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDEA1B8D151B00D0081D /* Debug */,
+				CE47EDEB1B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE47EDEC1B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDED1B8D151B00D0081D /* Debug */,
+				CE47EDEE1B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE47EDEF1B8D151B00D0081D /* Build configuration list for PBXNativeTarget "millyMadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE47EDF01B8D151B00D0081D /* Debug */,
+				CE47EDF11B8D151B00D0081D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE47ED901B8D151B00D0081D /* Project object */;
+}
